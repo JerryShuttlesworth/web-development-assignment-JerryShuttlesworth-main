@@ -12,8 +12,10 @@ export const infoView = (targetid, info) => {
     target.innerHTML = list;
 }    
 
+//view for the homepage
 export const defaultView = (targetid, jobs) => {
     const target = document.getElementById(targetid);
+    //creates handlebar for sampledata to be shown on page
 const jobTemplate = Handlebars.compile(`
 <div class="jobListings">
 {{#each array}}
@@ -29,6 +31,7 @@ const jobTemplate = Handlebars.compile(`
     target.innerHTML = jobTemplate({array: jobs})
 }
 
+//view for error page cannot be found page
 export const errorView = (targetid) => {
     const target = document.getElementById('main');
     target.innerHTML = "<p> page not found </p>"

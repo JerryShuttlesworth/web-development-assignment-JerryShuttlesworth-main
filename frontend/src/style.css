@@ -3,12 +3,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
+/* css to be applied to entire html page */
 html {
     background-color: aquamarine;
     text-align:center;
     font-family: 'Koulen', cursive;
 }
 
+/* css to be applied to title 'Bob's Jobs' */
 h1 {
     border: 2px solid white;
     margin-left: 40%;
@@ -17,6 +19,7 @@ h1 {
 
 }
 
+/* ul and li involves css for the nav bar */
 ul {
     list-style-type: none;
     margin: 0;
@@ -41,6 +44,7 @@ li a {
     padding-top: 10px;
 }
 
+/* css for creating borders for each individual job listing */
 .job {
     border: 2px solid white;
     padding: 10px;

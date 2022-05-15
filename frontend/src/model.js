@@ -3,11 +3,12 @@
 
 export {Model}
 
+//creates array which contains all the info of the job listings
 const Model = {
 DATA: {
     jobList: [],
 },
-
+//url contains 10 job listings in descending order
     jobsUrl: 'http://localhost:1337/api/jobs?sort[0]=publishedAt%3Adesc&pagination[pageSize]=10',
 
     loadData: () => {
