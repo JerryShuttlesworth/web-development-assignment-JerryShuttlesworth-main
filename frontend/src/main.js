@@ -5,6 +5,7 @@ import { Model } from './model.js'
 import {Router} from './router.js'
 import {defaultView, errorView, infoView} from '/views.js'
 
+/* instantiates the messages that are displayed on the about and help pages */
 const message = {
     'about': {"message": "Bob's Jobs is a revolution in career planning brought to you by Bob Bobalooba himself!"},
     'help': {"message": "Be sure to he honest in your application!!"}

@@ -1,10 +1,12 @@
 /* CSS Stylesheet for the COMP2110 Bob's Jobs Board */
 /* Author: Jerick Eli Dadios 46591680 */
 
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
 html {
     background-color: aquamarine;
     text-align:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Koulen', cursive;
 }
 
 h1 {
@@ -46,4 +48,9 @@ li a {
     margin-right: 30%;
     margin-bottom: 10px;
     color:darkslategray;
+    background-color: lightblue;
+}
+
+.jobTitle {
+    font-size: 30px;
 }
