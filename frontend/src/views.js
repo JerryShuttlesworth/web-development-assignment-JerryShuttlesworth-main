@@ -1,3 +1,6 @@
+/* JS View code for the COMP2110 Bob's Jobs Board */
+/* Author: Jerick Eli Dadios 46591680 */
+
 const infoTemplate = Handlebars.compile(`
 <div class = info>
     <p> {{'message'}}</p>
@@ -9,9 +12,21 @@ export const infoView = (targetid, info) => {
     target.innerHTML = list;
 }    
 
-export const defaultView = (targetid) => {
+export const defaultView = (targetid, jobs) => {
     const target = document.getElementById(targetid);
-    target.innerHTML = "<p> Hoyoverse has given me Ayaya Drip </p>"
+const jobTemplate = Handlebars.compile(`
+<div class="jobListings">
+{{#each array}}
+<div class="job">
+<div class = "jobTitle"><a class="jobsLink" href="/#!/jobs/{{id}}">{{attributes.title}}</a></div>
+<div class = "companyName">{{attributes.company.data.attributes.name}}</div>
+<div class = "jobType">{{attributes.type}}</div>
+<div class = "jobLocation">{{attributes.location}}</div>
+</div>
+{{/each}}
+</div>
+`)
+    target.innerHTML = jobTemplate({array: jobs})
 }
 
 export const errorView = (targetid) => {

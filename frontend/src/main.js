@@ -1,3 +1,7 @@
+/* JS Main code for the COMP2110 Bob's Jobs Board */
+/* Author: Jerick Eli Dadios 46591680 */
+
+import { Model } from './model.js'
 import {Router} from './router.js'
 import {defaultView, errorView, infoView} from '/views.js'
 
@@ -9,7 +13,7 @@ const message = {
 const router = new Router(errorView)
 
 router.get('/', () =>{
-    defaultView('main');
+    defaultView('main', Model.DATA.jobList);
 })
 
 router.get('/about', () =>{
@@ -24,8 +28,6 @@ const redraw = () => {
     router.route();
 }
 
-window.onload = redraw;
+window.addEventListener('updateModel', redraw);
 
-window.onload = () => {
-    document.getElementById('main').innerHTML = "<p>Bob will have some jobs here</p>"
-}
+window.onload = Model.loadData

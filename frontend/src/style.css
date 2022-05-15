@@ -3,4 +3,47 @@
 
 html {
     background-color: aquamarine;
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    border: 2px solid white;
+    margin-left: 40%;
+    margin-right: 40%;
+    color:darkslategray;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white; 
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+}
+
+.jobListings {  
+    padding-top: 10px;
+}
+
+.job {
+    border: 2px solid white;
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10px;
+    color:darkslategray;
 }
