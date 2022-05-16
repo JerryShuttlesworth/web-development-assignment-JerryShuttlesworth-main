@@ -11,7 +11,7 @@ const message = {
     'help': {"message": "Be sure to he honest in your application!!"}
 } 
 
-/* allows the json file containing the job listing data to be presented on the home page */
+/* allow the json file containing the job listing data to be presented on the home page */
 const router = new Router(errorView)
 router.get('/', () =>{
     defaultView('main', Model.DATA.jobList);

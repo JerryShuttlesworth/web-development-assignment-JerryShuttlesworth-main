@@ -15,7 +15,7 @@ export const infoView = (targetid, info) => {
 //view for the homepage
 export const defaultView = (targetid, jobs) => {
     const target = document.getElementById(targetid);
-    //creates handlebar for sampledata to be shown on page
+    //creates handlebar for sampledata to be displayed on page
 const jobTemplate = Handlebars.compile(`
 <div class="jobListings">
 {{#each array}}
